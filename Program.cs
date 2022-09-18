@@ -8,8 +8,16 @@ namespace ProyectoArray
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
+            Clases.Arreglo Argl = new Clases.Arreglo();
+            Argl.CrearArreglo();
+
+            Console.WriteLine("Accion a realizar(): ");
+            
+            
+            Console.ReadKey();
         }
     }
 }
