@@ -12,11 +12,21 @@ namespace ProyectoArray
         static void Main(string[] args)
         {
             Clases.Arreglo Argl = new Clases.Arreglo();
-            Argl.CrearArreglo();
 
-            Console.WriteLine("Accion a realizar(): ");
-            
-            
+            Console.WriteLine("Accion a realizar(" +
+                "Crear Normal -> 1, " +
+                "Buscar Desordenado -> 2" +
+                "): ");
+            int var = Convert.ToChar(Console.ReadLine());
+            switch (var)
+            {
+                case '1':
+                    Argl.crearArreglo();
+                    break;
+                default:
+                    Console.WriteLine("No existente");
+                    break;
+            }
             Console.ReadKey();
         }
     }

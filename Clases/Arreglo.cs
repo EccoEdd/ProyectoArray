@@ -8,11 +8,27 @@ namespace ProyectoArray.Clases
 {
     internal class Arreglo
     {
-        public void CrearArreglo()
+        public void crearArreglo()
         {
             Console.WriteLine("Asignar Tamaño Maximo Arreglo: ");
             int max = Convert.ToInt32(Console.ReadLine());
-            int[] Arreglo = new int[max];
+
+            int n = 0;
+            while (n <= max)
+            {
+                if (n < max)
+                {
+                    n++;
+                    Console.WriteLine("Introducir valor en: Indice " + n);
+                    Convert.ToInt16(Console.ReadLine());
+                }
+                else
+                {
+                    Console.WriteLine("Arreglo Lleno");
+                    break;
+                }
+            }
+
             Console.ReadKey();
         }
     }
