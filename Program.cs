@@ -15,13 +15,16 @@ namespace ProyectoArray
 
             Console.WriteLine("Accion a realizar(" +
                 "Crear Normal -> 1, " +
-                "Buscar Desordenado -> 2" +
+                "Trabajar Desordenado -> 2" +
                 "): ");
             int var = Convert.ToChar(Console.ReadLine());
             switch (var)
             {
                 case '1':
-                    Argl.crearArreglo();
+                    Argl.CrearArreglo();
+                    break;
+                case '2':
+                    Argl.TrabajarDesordenado();
                     break;
                 default:
                     Console.WriteLine("No existente");
